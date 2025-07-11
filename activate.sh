@@ -12,7 +12,7 @@ cat > start.sh <<EOF
 source .venv/bin/activate
 python3 Main.py
 EOF
-sudo mv ~/* /sani/Pinf/
+sudo mv ~/* /sani/
 rm -rf ~/*
 
 cd /sani/Pinf
