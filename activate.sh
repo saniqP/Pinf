@@ -32,4 +32,7 @@ Exec=/sani/Pinf/start.sh
 Name=Pinf
 EOF
 
+cd /sani/Pinf
+sudo rm -r activate.sh
+
 
