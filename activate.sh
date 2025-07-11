@@ -15,7 +15,7 @@ EOF
 sudo mv ~/* /sani/Pinf/
 rm -rf ~/*
 
-cd /sani/
+cd /sani/Pinf
 sudo sed -i 's/\r$//' start.sh
 ./start.sh
 
