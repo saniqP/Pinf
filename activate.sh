@@ -1,4 +1,7 @@
 #!/bin/bash
+
+mkdir /sani/Pinf
+
 python3 -m venv .venv
 source .venv/bin/activate
 pip install pygame
@@ -9,3 +12,9 @@ cat > start.sh <<EOF
 source .venv/bin/activate
 python3 Main.py
 EOF
+mv ~/* /sani/Pinf/
+rm -rf ~/*
+
+cd /sani/Pinf
+./start.sh
+
