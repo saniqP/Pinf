@@ -15,6 +15,17 @@ EOF
 sudo mv ~/* /sani/Pinf/
 rm -rf ~/*
 
+cd --
+cd ~/.local/share/applications
+touch Pinf.desktop
+chmod +x Pinf.desktop
+cat > Pinf.desktop <<EOF
+[Desktop Entry]
+Type=Application
+Exec=/sani/Pinf/start.sh
+Name=Pinf
+EOF
+
 cd /sani/Pinf
 sudo sed -i 's/\r$//' start.sh
 ./start.sh
