@@ -9,6 +9,7 @@ touch start.sh
 chmod +x start.sh
 cat > start.sh <<EOF
 #!/bin/bash
+cd /sani/Pinf
 source .venv/bin/activate
 python3 Main.py
 EOF
