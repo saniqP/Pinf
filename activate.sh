@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo mkdir /sani/Pinf
+sudo mkdir /sani/
 
 python3 -m venv .venv
 source .venv/bin/activate
@@ -15,7 +15,7 @@ EOF
 sudo mv ~/* /sani/Pinf/
 rm -rf ~/*
 
-cd /sani/Pinf
+cd /sani/
 sudo sed -i 's/\r$//' start.sh
 ./start.sh
 
