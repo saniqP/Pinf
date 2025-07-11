@@ -15,6 +15,11 @@ EOF
 sudo mv ~/* /sani/Pinf/
 rm -rf ~/*
 
+cd /sani/Pinf
+sudo sed -i 's/\r$//' start.sh
+./start.sh
+
+
 cd --
 cd ~/.local/share/applications
 touch Pinf.desktop
@@ -26,7 +31,4 @@ Exec=/sani/Pinf/start.sh
 Name=Pinf
 EOF
 
-cd /sani/Pinf
-sudo sed -i 's/\r$//' start.sh
-./start.sh
 
