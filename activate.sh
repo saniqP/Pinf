@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir /sani/Pinf
+sudo mkdir /sani/Pinf
 
 python3 -m venv .venv
 source .venv/bin/activate
@@ -12,9 +12,10 @@ cat > start.sh <<EOF
 source .venv/bin/activate
 python3 Main.py
 EOF
-mv ~/* /sani/Pinf/
+sudo mv ~/* /sani/Pinf/
 rm -rf ~/*
 
 cd /sani/Pinf
+sudo sed -i 's/\r$//' start.sh
 ./start.sh
 
